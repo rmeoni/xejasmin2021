@@ -220,7 +220,7 @@ p {
 
 
 /*jumbotron*/
-.jumbotron {
+#bs-over .jumbotron {
 	background-image: url("/public/images/SAM_6311.jpg") !important;
 	height:700px;
 	background-size: cover;
@@ -233,7 +233,7 @@ p {
 	padding-bottom:0px;
 }
 
-.jumbotron h1 {
+#bs-over .jumbotron h1 {
 	text-align:center;
 	color:#fff !important;
 	font-size:68px;

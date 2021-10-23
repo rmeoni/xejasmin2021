@@ -1,11 +1,11 @@
 @font-face {
 	font-family: Raleway;
-	src: url(/public/fonts/raleway/Raleway-Medium.ttf);
+	src: url(public/fonts/raleway/Raleway-Medium.ttf);
   }
 
 @font-face {
 	font-family: RalewayBold;
-	src: url(/public/fonts/raleway/Raleway-Bold.ttf);
+	src: url(public/fonts/raleway/Raleway-Bold.ttf);
 	font-weight: bold;
   }  	
 
@@ -221,7 +221,7 @@ p {
 
 /*jumbotron*/
 .jumbotron {
-	background-image:url("/public/images/SAM_6311.jpg");
+	background-image:url("public/images/SAM_6311.jpg");
 	height:700px;
 	background-size: cover;
 	background-position: center;
@@ -293,7 +293,7 @@ p {
 /*main menu*/
 
 .main {
-	background-image: url("/public/images/SAM_6014.jpg");
+	background-image: url("public/images/SAM_6014.jpg");
 	position: center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -366,7 +366,7 @@ p {
 
 /*atracciones */
 #bs-over #jumbotron-atracciones {
-	background-image:url("/public/images/jeep.jpg");
+	background-image:url("public/images/jeep.jpg");
 	height:500px;
 	background-size: cover;
 	background-position: center center;

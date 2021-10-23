@@ -1,6 +1,6 @@
 .jumbotron-menu {
 	height: 800px;
-	background-image: url('/public/images/frente.jpg');
+	background-image: url('public/images/frente.jpg');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;

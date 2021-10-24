@@ -294,7 +294,7 @@ p {
 /*main menu*/
 
 #bs-over #section-4 {
-	background-image: url("/public/images/SAM_6014.jpg") !important;
+	background-image: url("../images/SAM_6014.jpg") !important;
 	position: center center;
 	background-size: cover;
 	background-attachment: fixed;

@@ -492,7 +492,7 @@ font-family:'Raleway', sans-serif;
 /* for the Menu Page */
 #bs-over .jumbotron-menu {
 	height: 800px;
-	background-image: url('/public/images/frente.jpg');
+	background-image: url('../images/frente.jpg');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -658,5 +658,12 @@ font-family:'Raleway', sans-serif;
 
 .footer i {
 	display: inline;
+}
+
+#featuring-menu {
+	width: 100%;
+}
+#featuring-container {
+	padding: 8px;
 }
 }

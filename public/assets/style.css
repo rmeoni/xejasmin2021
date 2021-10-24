@@ -490,7 +490,7 @@ font-family:'Raleway', sans-serif;
 }
 
 /* for the Menu Page */
-#bs-over .jumbotron-menu {
+#jumbo {
 	height: 800px;
 	background-image: url('../images/frente.jpg') !important;
 	background-attachment: fixed;

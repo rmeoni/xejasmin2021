@@ -221,7 +221,7 @@ p {
 
 /*jumbotron*/
 #bs-over .jumbotron {
-	background-image: url('/public/images/SAM_6311.jpg') !important;
+	background-image: url('/public/images/SAM_6311.png') !important;
 	height:700px;
 	background-size: cover;
 	background-position: center;
@@ -367,7 +367,7 @@ p {
 
 /*atracciones */
 #bs-over #jumbotron-atracciones {
-	background-image: url('/public/images/jeep.jpg') !important;
+	background-image: url('/public/images/jeep.png') !important;
 	height:500px;
 	background-size: cover;
 	background-position: center center;

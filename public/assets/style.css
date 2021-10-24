@@ -221,7 +221,7 @@ p {
 
 /*jumbotron*/
 #bs-over .jumbotron {
-	background-image: url("/public/images/SAM_6311.jpg") !important;
+	background-image: url('/public/images/SAM_6311.jpg') !important;
 	height:700px;
 	background-size: cover;
 	background-position: center;

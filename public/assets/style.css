@@ -85,8 +85,8 @@ p {
 
 .icon-close {
   cursor: pointer;
-  padding-left: 10px;
-  padding-top: 10px;
+  padding-left: 20px;
+  padding-top: 0px;
   margin-top: 20px;
   background-color:#000;
   color:#fff;
@@ -436,21 +436,9 @@ font-family:'Raleway', sans-serif;
 
 .pre-footer li {
 	display:inline-block;
-	padding:5px;
+	padding:1px;
 }
 
-.pre-footer i {
-	border: 1px solid #fff;
-	padding: 10px 12px 10px 12px;
-	border-radius: 50%;
-	font-size: 25px;
-	transition: background-color .3s;
-}
-
-#bs-over .pre-footer i:hover {
-	background-color: #fff;
-	color:#28211F;
-}
 
 .pre-footer a {
 	text-decoration:none;
@@ -459,10 +447,6 @@ font-family:'Raleway', sans-serif;
   	transition:color 0.25s;
 }
 
-.pre-footer #fb {
-	font-size: 23px;
-	padding: 10px 15px 10px 15px;
-}
 
 /*footer*/
 .footer {
@@ -637,11 +621,6 @@ font-family:'Raleway', sans-serif;
 }
 
 /* carousel */
-
-#bs-over .carousel {
-	display:none !important;
-	visibility: hidden;
-}
 
 #bs-over .carousel-inner .item img {
 	height: 250px;

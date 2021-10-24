@@ -231,6 +231,7 @@ p {
 	background-attachment: fixed;
 	margin-bottom:0px;
 	padding-bottom:0px;
+	background-color: none !important;
 }
 
 #bs-over .jumbotron h1 {
@@ -489,9 +490,9 @@ font-family:'Raleway', sans-serif;
 }
 
 /* for the Menu Page */
-.jumbotron-menu {
+#bs-over .jumbotron-menu {
 	height: 800px;
-	background-image: url('public/images/frente.jpg');
+	background-image: url('/public/images/frente.jpg');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;

@@ -221,7 +221,7 @@ p {
 
 /*jumbotron*/
 #bs-over .jumbotron {
-	background-image: url('../images/peacock.png') !important;
+	background-image: url('../images/SAM_6311.jpg') !important;
 	height:700px;
 	background-size: cover;
 	background-position: center;
@@ -367,7 +367,7 @@ p {
 
 /*atracciones */
 #bs-over #jumbotron-atracciones {
-	background-image: url('../images/jeep.png') !important;
+	background-image: url('../images/jeep.jpg') !important;
 	height:500px;
 	background-size: cover;
 	background-position: center center;
@@ -637,6 +637,12 @@ font-family:'Raleway', sans-serif;
 }
 
 /* carousel */
+
+#bs-over .carousel {
+	display:none !important;
+	visibility: hidden;
+}
+
 #bs-over .carousel-inner .item img {
 	height: 250px;
 }

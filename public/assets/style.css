@@ -430,13 +430,13 @@ font-family:'Raleway', sans-serif;
 .pre-footer ul {
 	list-style-type: none;
 	margin-top:20px;
-	padding-left: 0px;
-	margin-left: 0px;
+	padding-left: 0px !important;
+	margin-left: -20px;
 }
 
 .pre-footer li {
 	display:inline-block;
-	padding:1px;
+	padding:2px;
 }
 
 

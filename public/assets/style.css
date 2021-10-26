@@ -580,7 +580,7 @@ font-family:'Raleway', sans-serif;
 @media only screen and (max-width:768px) {
 
 #bs-over .jumbotron h1 {
-	font-size: 3.4em;
+	padding: 40px 20px 0px;
 }
 
 .jumbotron h3 {

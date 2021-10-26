@@ -274,7 +274,7 @@ p {
 
 .supporting p {
 	font-family:'Raleway', sans-serif;
-	color:#565656;
+	color:#A1A1A1;
 	font-size:16px;
 	line-height: 30px;
 }
@@ -393,7 +393,7 @@ p {
 }
 
 #bs-over .feature-2 .container h4 {
- 	color: #332C29;
+ 	color: #565656;
 }
 
 /*supporting-2/contact us*/

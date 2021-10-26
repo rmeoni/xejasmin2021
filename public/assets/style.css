@@ -1,12 +1,14 @@
 @font-face {
 	font-family: Raleway;
 	src: url(../fonts/raleway/Raleway-Medium.ttf);
+	font-display: block;
   }
 
 @font-face {
 	font-family: RalewayBold;
 	src: url(../fonts/raleway/Raleway-Bold.ttf);
 	font-weight: bold;
+	font-display: block;
   }  	
 
 html, body {
@@ -599,7 +601,7 @@ font-family:'Raleway', sans-serif;
 }
 
 .header h1 {
-	font-size: 4em;
+	font-size: 4em !important;
 }
 
 #bs-over .icon-menu {

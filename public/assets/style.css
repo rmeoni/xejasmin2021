@@ -623,7 +623,7 @@ font-family:'Raleway', sans-serif;
 /* carousel */
 
 #bs-over .carousel-inner .item img {
-	height: 250px;
+	height: 100%;
 }
 
 .main-menu {

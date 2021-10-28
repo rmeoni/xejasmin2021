@@ -9,7 +9,14 @@
 	src: url(../fonts/raleway/Raleway-Bold.ttf);
 	font-weight: bold;
 	font-display: block;
-  }  	
+  } 
+  
+  @font-face {
+	font-family: RalewayLight;
+	src: url(../fonts/raleway/Raleway-Light.ttf);
+	font-weight: lighter;
+	font-display: block;
+  } 
 
 html, body {
 	font-family:'Raleway', sans-serif;
@@ -241,16 +248,14 @@ p {
 	color:#fff !important;
 	font-size:68px;
 	padding-top:60px;
-	text-shadow:0 2px 3px rgba(0,0,0,.6);
 }
 
 .jumbotron h3 {
 	color:#fff;
 	text-align:center;
-	font-weight:200;
-	font-family:'Raleway',sans-serif;
-	text-shadow:0 2px 3px rgba(0,0,0,.6);
-	padding: 20px;
+	font-weight:lighter;
+	font-family:RalewayLight,sans-serif;
+	padding: 0px 20px;
 }
 
 

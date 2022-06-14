@@ -612,7 +612,13 @@ font-family:'Raleway', sans-serif;
 
 #bs-over #myCarousel {
  max-height: 400px;
+ width: 100% !important;
  overflow: hidden;
+}
+
+.carousel-inner .item img {
+	width: 100% !important;
+
 }
 #bs-over .jumbotron h1 {
 	padding: 60px 20px 0px;

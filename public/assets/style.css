@@ -590,10 +590,17 @@ font-family:'Raleway', sans-serif;
 	background-attachment: scroll;
 	background-position: cover;
 	width: 100% !important;
-	height: 500px;
+	height: 700px;
 	overflow: hidden;
 	
 }	
+#bs-over .main {
+	background-attachment: scroll;
+	background-position: cover;
+	width: 100% !important;
+	height: 500px;
+	overflow: hidden;
+}
 
 #bs-over .jumbotron h1 {
 	padding: 60px 20px 0px;

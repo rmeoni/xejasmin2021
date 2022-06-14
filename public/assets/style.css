@@ -610,8 +610,9 @@ font-family:'Raleway', sans-serif;
 	overflow: hidden;
 }
 
-#bs-over #section-6 {
+#bs-over #myCarousel {
  max-height: 400px;
+ overflow: hidden;
 }
 #bs-over .jumbotron h1 {
 	padding: 60px 20px 0px;

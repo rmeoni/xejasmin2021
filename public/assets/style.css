@@ -594,7 +594,15 @@ font-family:'Raleway', sans-serif;
 	overflow: hidden;
 	
 }	
-#bs-over .main {
+#bs-over #section-4 {
+	background-attachment: scroll;
+	background-position: cover;
+	width: 100% !important;
+	height: 500px;
+	overflow: hidden;
+}
+
+#bs-over #jumbotron-atracciones {
 	background-attachment: scroll;
 	background-position: cover;
 	width: 100% !important;

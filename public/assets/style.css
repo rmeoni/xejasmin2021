@@ -129,7 +129,7 @@ button:focus:not(:focus-visible) {
 
 @media (max-width: 768px) {
   .mobile-logo {
-    height: 72px;
+    height: 88px;
   }
 }
 /* -------------------------------- */

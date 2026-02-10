@@ -968,6 +968,40 @@ body[style*="left: 300px"] .icon-menu {
   }
 }
 
+/* Tablets and iPad - Use hamburger menu */
+@media only screen and (max-width: 1024px) {
+  .nav {
+    display: none !important;
+  }
+
+  #bs-over .icon-menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-logo {
+    display: inline-block;
+    padding: 18px 10px;
+    margin-top: 28px;
+  }
+  
+  #bs-over .jumbotron {
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  #bs-over #section-4 {
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  #bs-over #jumbotron-atracciones {
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
 /* Mobile phones */
 @media only screen and (max-width: 480px) {
   :root {

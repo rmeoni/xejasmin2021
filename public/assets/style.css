@@ -539,6 +539,17 @@ body[style*="left: 300px"] .icon-menu {
   margin-bottom: var(--spacing-xl);
 }
 
+.menu-category .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.menu-category .row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
 #bs-over .main-menu .row {
   margin-bottom: 0;
   padding-bottom: var(--spacing-md);
@@ -582,7 +593,9 @@ body[style*="left: 300px"] .icon-menu {
   margin-bottom: var(--spacing-md);
   transition: all 0.3s ease;
   border: 1px solid rgba(0, 0, 0, 0.05);
-  height: calc(100% - var(--spacing-md));
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-item:hover {
@@ -969,7 +982,7 @@ body[style*="left: 300px"] .icon-menu {
 }
 
 /* Tablets and iPad - Use hamburger menu */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .nav {
     display: none !important;
   }
@@ -989,16 +1002,19 @@ body[style*="left: 300px"] .icon-menu {
   #bs-over .jumbotron {
     background-size: cover;
     background-position: center center;
+    background-attachment: scroll;
   }
   
   #bs-over #section-4 {
     background-size: cover;
     background-position: center center;
+    background-attachment: scroll;
   }
   
   #bs-over #jumbotron-atracciones {
     background-size: cover;
     background-position: center center;
+    background-attachment: scroll;
   }
 }
 

@@ -13,14 +13,12 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 
-  <!-- Preload main CSS (helps prevent late-loading styles) -->
-  <link rel="preload" href="public/assets/style.css" as="style" />
-
   <!-- Styles -->
   <link rel="stylesheet" type="text/css" href="public/assets/style.css" />
 
   <!-- Favicon -->
   <link rel="icon" href="/public/assets/images/isotipo.ico" />
+
 </head>
 
 <body id="bs-over">
@@ -111,6 +109,7 @@
       <div class="hero-content">
         <h1>Restaurante y Hotel</h1>
         <p class="hero-subtitle">Eventos especiales, tours y mucho más</p>
+        <a href="#section-2" class="hero-cta">Descubrir más</a>
       </div>
     </div>
   </header>
@@ -120,7 +119,7 @@
     <section class="supporting" id="section-2" aria-labelledby="restaurante-title">
       <div class="container">
         <div class="row">
-          <div class="col-md-7">
+          <div class="col-md-7 col-sm-12">
             <h2 id="restaurante-title">
               Ubicado en el km. 87 carretera Interamericana, Paseo Xejasmin es un restaurante que brinda un nuevo concepto de gastronomía rodeado de naturaleza.
             </h2>
@@ -140,16 +139,39 @@
             </p>
           </div>
 
-          <aside class="col-md-4 col-md-offset-1 info-card" aria-label="Información del lugar">
-            <h3 class="info-title">Teléfonos</h3>
-            <p>(502) 45765303 y 78404390</p>
+          <aside class="col-md-4 col-md-offset-1 col-sm-12 info-card" aria-label="Información del lugar">
+            <div class="info-item">
+              <h3 class="info-title">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                Teléfonos
+              </h3>
+              <p>(502) 45765303<br>78404390</p>
+            </div>
 
-            <h3 class="info-title">Ubicación</h3>
-            <p>Cruce en el Km. 87 Carretera Interamericana (a 3 minutos de la carretera), Tecpán, Guatemala.</p>
+            <div class="info-item">
+              <h3 class="info-title">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Ubicación
+              </h3>
+              <p>Cruce en el Km. 87 Carretera Interamericana (a 3 minutos de la carretera), Tecpán, Guatemala.</p>
+            </div>
 
-            <h3 class="info-title">Horario</h3>
-            <p><strong>Lunes–Jueves</strong> 7 a.m.–5 p.m.</p>
-            <p><strong>Viernes–Domingo</strong> 7 a.m.–7 p.m.</p>
+            <div class="info-item">
+              <h3 class="info-title">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Horario
+              </h3>
+              <p><strong>Lunes–Jueves</strong><br>7 a.m.–5 p.m.</p>
+              <p><strong>Viernes–Domingo</strong><br>7 a.m.–7 p.m.</p>
+            </div>
           </aside>
         </div>
       </div>
@@ -177,98 +199,152 @@
     <!-- Menu content -->
     <section class="main-menu" aria-label="Listado de platillos">
       <div class="container">
-        <div class="row">
+        <div class="menu-category">
           <h3>Desayunos</h3>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="menu-item">
+                <h4>PASEO XEJASMIN</h4>
+                <p>Huevos al gusto y 5 oz. de lomito o puyazo importado</p>
+              </div>
+            </div>
 
-          <div class="col-md-4">
-            <h4>PASEO XEJASMIN</h4>
-            <p>Huevos al gusto y 5 oz. de lomito o puyazo importado</p>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="menu-item">
+                <h4>BIG PASEO XEJASMIN</h4>
+                <p>Huevos al gusto gratinados con mozzarella y cheddar, 5 oz. de lomito o puyazo importado, longaniza o chorizo y hashbrown</p>
+              </div>
+            </div>
 
-            <h4>BIG PASEO XEJASMIN</h4>
-            <p>Huevos al gusto gratinados con mozzarella y cheddar, 5 oz. de lomito o puyazo importado, longaniza o chorizo y hashbrown</p>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="menu-item">
+                <h4>PARRILLADA XEJASMIN DESAYUNO</h4>
+                <p>Huevos al gusto, chorizo, longaniza, 5 oz. de lomito o puyazo importado y 1 panqueque</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="menu-item">
+                <h4>HUEVOS CON TOMATE Y CEBOLLA</h4>
+                <p>Huevos revueltos con tomate y cebolla picada</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="menu-item">
+                <h4>EL MANCHECITO</h4>
+                <p>Huevos al gusto gratinados con mozzarella y cheddar con tiras de jamón montados sobre pan con ajo/mantequilla</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="menu-item">
+                <h4>XEJASMIN TRADICIONAL</h4>
+                <p>Huevos al gusto, 1 panqueque, 1 chorizo o longaniza</p>
+              </div>
+            </div>
           </div>
 
-          <div class="col-md-4">
-            <h4>PARRILLADA XEJASMIN DESAYUNO</h4>
-            <p>Huevos al gusto, chorizo, longaniza, 5 oz. de lomito o puyazo importado y 1 panqueque</p>
-
-            <h4>HUEVOS CON TOMATE Y CEBOLLA</h4>
-            <p>Huevos revueltos con tomate y cebolla picada</p>
-          </div>
-
-          <div class="col-md-4">
-            <h4>EL MANCHECITO</h4>
-            <p>Huevos al gusto gratinados con mozzarella y cheddar con tiras de jamón montados sobre pan con ajo/mantequilla</p>
-
-            <h4>XEJASMIN TRADICIONAL</h4>
-            <p>Huevos al gusto, 1 panqueque, 1 chorizo o longaniza</p>
-          </div>
+          <img class="img-responsive content-image" src="public/images/desayuno.jpg" alt="Platos de desayuno" loading="lazy" />
         </div>
 
-        <img class="img-responsive content-image" src="public/images/desayuno.jpg" alt="Platos de desayuno" loading="lazy" />
-
-        <div class="row">
+        <div class="menu-category">
           <h3>Entraditas</h3>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="menu-item">
+                <h4>NACHOS FAMILIARES</h4>
+                <p>Acompañados de frijol, guacamol y queso derretido</p>
+              </div>
+            </div>
 
-          <div class="col-md-4">
-            <h4>NACHOS FAMILIARES</h4>
-            <p>Acompañados de frijol, guacamol y queso derretido</p>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="menu-item">
+                <h4>LAS DOBLADITAS</h4>
+                <p>Tortillas con queso derretido en pedacitos, con frijol y guacamol, acompañadas de salsa ranchera</p>
+              </div>
+            </div>
 
-            <h4>LAS DOBLADITAS</h4>
-            <p>Tortillas con queso derretido en pedacitos, con frijol y guacamol, acompañadas de salsa ranchera</p>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="menu-item">
+                <h4>NACHOS XEJASMIN</h4>
+                <p>Acompañados de estofado hecho en casa, carne o pollo, guacamol, frijoles volteados y queso derretido</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="menu-item">
+                <h4>QUESO FUNDIDO</h4>
+                <p>Variedad de quesos fundidos con trozos de chorizo</p>
+              </div>
+            </div>
           </div>
 
-          <div class="col-md-4">
-            <h4>NACHOS XEJASMIN</h4>
-            <p>Acompañados de estofado hecho en casa, carne o pollo, guacamol, frijoles volteados y queso derretido</p>
-          </div>
-
-          <div class="col-md-4">
-            <h4>QUESO FUNDIDO</h4>
-            <p>Variedad de quesos fundidos con trozos de chorizo</p>
-          </div>
+          <img class="img-responsive content-image" src="public/images/pizza.jpg" alt="Platillo tipo pizza" loading="lazy" />
         </div>
 
-        <img class="img-responsive content-image" src="public/images/pizza.jpg" alt="Platillo tipo pizza" loading="lazy" />
-
-        <div class="row">
+        <div class="menu-category">
           <h3>Parrilladas</h3>
-          <div class="col-md-6">
-            <h4>PARRILLADA XEJASMÍN</h4>
-            <p>
-              1–10 personas. 4 oz carne de res (puyazo o lomito), carne de cerdo (lomo en adobado o costilla en barbacoa),
-              longaniza, chorizo, pollo, guacamol, frijol, cebollines, papa asada y tortillas.
-            </p>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="menu-item featured-item">
+                <h4>PARRILLADA XEJASMÍN</h4>
+                <p>
+                  Para 1–10 personas. 4 oz carne de res (puyazo o lomito), carne de cerdo (lomo en adobado o costilla en barbacoa),
+                  longaniza, chorizo, pollo, guacamol, frijol, cebollines, papa asada y tortillas.
+                </p>
+              </div>
+            </div>
           </div>
+
+          <img class="img-responsive content-image" src="public/images/parrillada.jpg" alt="Parrillada variada" loading="lazy" />
         </div>
 
-        <img class="img-responsive content-image" src="public/images/parrillada.jpg" alt="Parrillada variada" loading="lazy" />
-
-        <div class="row">
+        <div class="menu-category">
           <h3>Almuerzos</h3>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="menu-item">
+                <h4>Puyazo importado</h4>
+              </div>
+            </div>
 
-          <div class="col-md-4">
-            <h4>Puyazo importado</h4>
-            <h4>Lomito importado</h4>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="menu-item">
+                <h4>Lomito importado</h4>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="menu-item">
+                <h4>Lomo adobado</h4>
+                <p>8 oz. de lomo de cerdo importado en adobo</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="menu-item">
+                <h4>Costillas a la barbacoa</h4>
+                <p>Pork ribs</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="menu-item">
+                <h4>Spaghetti en salsa Alfredo o Boloñesa</h4>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="menu-item">
+                <h4>Pollo al carbón</h4>
+                <p>8 oz. de filete de pechuga asado</p>
+              </div>
+            </div>
           </div>
 
-          <div class="col-md-4">
-            <h4>Lomo adobado</h4>
-            <p>8 oz. de lomo de cerdo importado en adobo…</p>
-
-            <h4>Costillas a la barbacoa</h4>
-            <p>Pork ribs</p>
-
-            <h4>Spaghetti en salsa Alfredo o Boloñesa</h4>
-          </div>
-
-          <div class="col-md-4">
-            <h4>Pollo al carbón</h4>
-            <p>8 oz. de filete de pechuga asado…</p>
-          </div>
+          <img class="img-responsive content-image" src="public/images/SHK9163.jpg" alt="Platillo servido en mesa" loading="lazy" />
         </div>
-
-        <img class="img-responsive content-image" src="public/images/SHK9163.jpg" alt="Platillo servido en mesa" loading="lazy" />
 
         <div id="featuring-label">
           <h3>¡Y muchos platillos más!</h3>
@@ -278,7 +354,12 @@
             rel="noopener noreferrer"
             id="button-download"
           >
-            Descargar menú
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; vertical-align: middle;">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Descargar menú completo
           </a>
         </div>
       </div>
@@ -293,13 +374,37 @@
       </div>
 
       <div class="container">
-        <div class="row" id="top-row">
-          <div class="col-md-4 col-xs-12"><h4><b>Tour a la Montaña…</b></h4></div>
-          <div class="col-md-4 col-xs-12"><h4><b>Go Karts</b></h4></div>
-          <div class="col-md-4 col-xs-12"><h4><b>Canopy Pequeño…</b></h4></div>
-          <div class="col-md-4 col-xs-12"><h4><b>Canopy Montaña…</b></h4></div>
-          <div class="col-md-4 col-xs-12"><h4><b>Caballito…</b></h4></div>
-          <div class="col-md-4 col-xs-12"><h4><b>Pared de Escalar…</b></h4></div>
+        <div class="row attractions-grid">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="attraction-card">
+              <h4>Tour a la Montaña</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="attraction-card">
+              <h4>Go Karts</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="attraction-card">
+              <h4>Canopy Pequeño</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="attraction-card">
+              <h4>Canopy Montaña</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="attraction-card">
+              <h4>Caballito</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="attraction-card">
+              <h4>Pared de Escalar</h4>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -307,6 +412,7 @@
     <!-- Galería -->
     <section class="supporting-2" id="section-6" aria-label="Galería de imágenes">
       <div class="container">
+        <h2 class="gallery-title">Galería</h2>
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000" aria-label="Carrusel de imágenes">
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -376,19 +482,20 @@
   <!-- Pre-footer -->
   <div class="pre-footer" role="contentinfo" aria-label="Redes sociales">
     <div class="container">
+      <h3 class="social-title">Síguenos en redes sociales</h3>
       <ul id="footer-icons" role="list">
         <li>
-          <a href="https://www.facebook.com/paseo.xejasmin/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <a href="https://www.facebook.com/paseo.xejasmin/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-link">
             <img src="public/icons/icon-facebook.svg" alt="" aria-hidden="true" />
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/paseoxejasmin" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <a href="https://twitter.com/paseoxejasmin" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="social-link">
             <img src="public/icons/icon-twitter.svg" alt="" aria-hidden="true" />
           </a>
         </li>
         <li>
-          <a href="http://instagram.com/paseoxejasmin" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a href="http://instagram.com/paseoxejasmin" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
             <img src="public/icons/icon-instagram.svg" alt="" aria-hidden="true" />
           </a>
         </li>
@@ -419,34 +526,16 @@
       $(".site-navigation").hide();
       var topOfOthDiv = $(".supporting").offset().top;
 
-      function isMobile() {
-        return window.matchMedia("(max-width: 768px)").matches;
-      }
-
-      function syncHamburgerVisibility() {
-        // Only allow the hamburger to be visible on mobile
-        if (!isMobile()) {
-          $(".icon-menu").hide();
-        } else {
-          // If menu is open, keep it hidden; if closed, show it
-          var menuIsOpen = $(".icon-menu").attr("aria-expanded") === "true";
-          if (menuIsOpen) $(".icon-menu").hide();
-          else $(".icon-menu").show();
-        }
-      }
-
       function openMenu() {
         $(".menu").animate({ left: "0px" }, 200).attr("aria-hidden", "false");
         $("body").animate({ left: "280px" }, 200);
         $(".icon-menu").attr("aria-expanded", "true");
-        syncHamburgerVisibility(); // hide on open (and never show on desktop)
       }
 
       function closeMenu() {
         $(".menu").animate({ left: "-280px" }, 200).attr("aria-hidden", "true");
         $("body").animate({ left: "0px" }, 200);
         $(".icon-menu").attr("aria-expanded", "false");
-        syncHamburgerVisibility(); // show again ONLY on mobile
       }
 
       $(window).scroll(function () {
@@ -473,13 +562,6 @@
       $(document).on("keydown", function (e) {
         if (e.key === "Escape") closeMenu();
       });
-
-      // Ensure correct visibility on load + resize
-      $(window).on("resize", function () {
-        syncHamburgerVisibility();
-      });
-
-      syncHamburgerVisibility();
     };
 
     $(document).ready(main);

@@ -106,20 +106,12 @@ button:focus:not(:focus-visible) {
 	padding: 8px 10px;
 }
 
-@media (max-width: 768px) {
-
-	/* Bigger logo on mobile */
-	.mobile-logo {
-		height: 84px;
-	}
-}
-
-/* -------------------------------- */
-
 /* Mobile logo hidden by default */
 .mobile-logo {
 	display: none;
 }
+
+/* -------------------------------- */
 
 /* Mobile menu */
 .menu {
@@ -264,9 +256,11 @@ button:focus:not(:focus-visible) {
 	content: "";
 	position: absolute;
 	inset: 0;
-	background: linear-gradient(rgba(0, 0, 0, 0.52),
-			rgba(0, 0, 0, 0.35),
-			rgba(0, 0, 0, 0.65));
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.52),
+		rgba(0, 0, 0, 0.35),
+		rgba(0, 0, 0, 0.65)
+	);
 }
 
 .header {
@@ -585,7 +579,6 @@ button:focus:not(:focus-visible) {
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-
 	html,
 	body {
 		scroll-behavior: auto;
@@ -632,6 +625,11 @@ button:focus:not(:focus-visible) {
 		margin-top: 28px;
 	}
 
+	/* Bigger logo on mobile (requested) */
+	.mobile-logo {
+		height: 110px;
+	}
+
 	#bs-over #section-4 {
 		height: 360px;
 	}
@@ -662,35 +660,5 @@ button:focus:not(:focus-visible) {
 
 	.supporting-2 h2 {
 		font-size: 32px;
-	}
-
-	/* Make the open icon a real button */
-	#bs-over .icon-menu {
-		cursor: pointer;
-		position: fixed;
-		left: 18px;
-		top: 14px;
-		z-index: 2100;
-		display: none;
-		/* hidden by default (desktop) */
-		background: rgba(0, 0, 0, 0.72);
-		border: 1px solid rgba(255, 255, 255, 0.18);
-		border-radius: 12px;
-		padding: 10px 12px;
-		line-height: 0;
-	}
-
-	/* Bigger logo on mobile */
-	@media (max-width: 768px) {
-		.mobile-logo {
-			height: 84px;
-		}
-
-		/* Only show hamburger on mobile */
-		#bs-over .icon-menu {
-			display: inline-flex;
-			align-items: center;
-			justify-content: center;
-		}
 	}
 }

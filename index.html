@@ -1,408 +1,485 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <!--Bootstrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <!-- stylesheet -->
-  <link rel="stylesheet" type="text/css" href="public/assets/style.css">
-  <!--mobile friendly-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/public/images/isotipo.ico">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Paseo Xejasmin Restaurante y Hotel</title>
+  <meta
+    name="description"
+    content="Paseo Xejasmin: restaurante y hotel rodeado de naturaleza en Tecpán, Guatemala. Eventos especiales, tours y más."
+  />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="public/assets/style.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/public/assets/images/isotipo.ico" />
 </head>
+
 <body id="bs-over">
+  <!-- Skip link (keyboard accessibility) -->
+  <a class="skip-link" href="#main">Saltar al contenido</a>
 
-
-   <!--slide nav will only appear from section2 and on-->
-   <div class="site-navigation page-navigation">
+  <!-- Slide nav will only appear from section 2 and on -->
+  <nav class="site-navigation page-navigation" aria-label="Navegación principal secundaria">
     <div class="container" id="site-nav">
-      <ul class="nav nav-slide">
+      <ul class="nav nav-slide" role="list">
         <li><a href="#section-1">inicio</a></li>
         <li><a href="#section-2">restaurante</a></li>
         <li><a href="#section-4">menu</a></li>
         <li><a href="#section-5">atracciones</a></li>
-        <li><a href="#section-6">Galer&iacute;a</a></li>
-        <li><a href="#section-7">cont&aacute;ctenos</a></li>
+        <li><a href="#section-6">galería</a></li>
+        <li><a href="#section-7">contáctenos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Mobile menu open button -->
+  <button
+    type="button"
+    class="icon-menu"
+    aria-label="Abrir menú"
+    aria-controls="mobileMenu"
+    aria-expanded="false"
+  >
+    <img src="public/icons/menu_white_24dp.svg" alt="" aria-hidden="true" />
+    <span class="sr-only">Abrir menú</span>
+  </button>
+
+  <!-- Mobile Menu -->
+  <aside class="menu" id="mobileMenu" aria-label="Menú móvil" aria-hidden="true">
+    <button type="button" class="icon-close" aria-label="Cerrar menú">
+      <img src="public/icons/close_white_24dp.svg" alt="" aria-hidden="true" />
+      <span class="sr-only">Cerrar menú</span>
+    </button>
+
+    <ul class="mobile-menu" role="list">
+      <li><a href="#section-1">Inicio</a></li>
+      <li><a href="#section-2">Restaurante</a></li>
+      <li><a href="#section-4">Menu</a></li>
+      <li><a href="#section-5">Atracciones</a></li>
+      <li><a href="#section-6">Galería</a></li>
+      <li><a href="#section-7">Contáctenos</a></li>
+    </ul>
+  </aside>
+
+  <!-- HERO / JUMBOTRON -->
+  <header class="jumbotron" id="section-1" role="banner">
+    <div class="header">
+      <div class="container">
+        <a href="#section-1" class="brand-link" aria-label="Ir al inicio">
+          <img
+            class="mobile-logo"
+            src="public/images/logoblanco.png"
+            alt="Logo de Paseo Xejasmin"
+            loading="eager"
+          />
+        </a>
+
+        <!-- Desktop nav -->
+        <nav aria-label="Navegación principal">
+          <ul class="nav" role="list">
+            <li><a href="#section-1">inicio</a></li>
+            <li><a href="#section-2">restaurante</a></li>
+            <li><a href="#section-4">menu</a></li>
+
+            <li class="nav-logo">
+              <a href="#section-1" aria-label="Ir al inicio">
+                <img
+                  class="desktop-logo"
+                  src="public/images/logoblanco.png"
+                  alt="Logo de Paseo Xejasmin"
+                  loading="eager"
+                />
+              </a>
+            </li>
+
+            <li><a href="#section-5">atracciones</a></li>
+            <li><a href="#section-6">galería</a></li>
+            <li><a href="#section-7">contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="hero-content">
+        <h1>Restaurante y Hotel</h1>
+        <p class="hero-subtitle">Eventos especiales, tours y mucho más</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Supporting Restaurante -->
+    <section class="supporting" id="section-2" aria-labelledby="restaurante-title">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h2 id="restaurante-title">
+              Ubicado en el km. 87 carretera Interamericana, Paseo Xejasmin es un restaurante que brinda un nuevo concepto de gastronomía rodeado de naturaleza.
+            </h2>
+
+            <p>
+              Paseo Xejasmin abre sus puertas al público el 16 de abril del año 2011. Este negocio familiar se emprende con el propósito de crear un nuevo concepto de gastronomía rodeado de naturaleza.
+            </p>
+
+            <p>
+              Queriendo consentir a nuestros invitados hemos hecho de este un lugar exclusivo y muy privado, para que pueda relajarse y disfrutar de los exquisitos platillos que ofrecemos mientras usted, su familia y sus amigos pasan un buen rato juntos.
+            </p>
+
+            <p><strong>¡Aquí sí hay algo más que hacer que solo comer!</strong></p>
+
+            <p>
+              Le damos la bienvenida a este bello lugar creado para consentirlo, siéntase como en su casa y esperamos tenerlo en otra ocasión.
+            </p>
+          </div>
+
+          <aside class="col-md-4 col-md-offset-1 info-card" aria-label="Información del lugar">
+            <h3 class="info-title">Teléfonos</h3>
+            <p>(502) 45765303 y 78404390</p>
+
+            <h3 class="info-title">Ubicación</h3>
+            <p>Cruce en el Km. 87 Carretera Interamericana (a 3 minutos de la carretera), Tecpán, Guatemala.</p>
+
+            <h3 class="info-title">Horario</h3>
+            <p><strong>Lunes–Jueves</strong> 7 a.m.–5 p.m.</p>
+            <p><strong>Viernes–Domingo</strong> 7 a.m.–7 p.m.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature video -->
+    <section class="feature" id="section-3" aria-label="Video de Paseo Xejasmin">
+      <div class="container">
+        <div class="video-frame">
+          <video controls muted autoplay loop playsinline preload="metadata">
+            <source src="public/video/paseo-xejasmin.mp4" type="video/mp4" />
+            Tu navegador no soporta video HTML5.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main menu header -->
+    <section class="main" id="section-4" aria-label="Sección de menú">
+      <div class="container">
+        <h2>Menú</h2>
+      </div>
+    </section>
+
+    <!-- Menu content -->
+    <section class="main-menu" aria-label="Listado de platillos">
+      <div class="container">
+        <div class="row">
+          <h3>Desayunos</h3>
+
+          <div class="col-md-4">
+            <h4>PASEO XEJASMIN</h4>
+            <p>Huevos al gusto y 5 oz. de lomito o puyazo importado</p>
+
+            <h4>BIG PASEO XEJASMIN</h4>
+            <p>Huevos al gusto gratinados con mozzarella y cheddar, 5 oz. de lomito o puyazo importado, longaniza o chorizo y hashbrown</p>
+          </div>
+
+          <div class="col-md-4">
+            <h4>PARRILLADA XEJASMIN DESAYUNO</h4>
+            <p>Huevos al gusto, chorizo, longaniza, 5 oz. de lomito o puyazo importado y 1 panqueque</p>
+
+            <h4>HUEVOS CON TOMATE Y CEBOLLA</h4>
+            <p>Huevos revueltos con tomate y cebolla picada</p>
+          </div>
+
+          <div class="col-md-4">
+            <h4>EL MANCHECITO</h4>
+            <p>Huevos al gusto gratinados con mozzarella y cheddar con tiras de jamón montados sobre pan con ajo/mantequilla</p>
+
+            <h4>XEJASMIN TRADICIONAL</h4>
+            <p>Huevos al gusto, 1 panqueque, 1 chorizo o longaniza</p>
+          </div>
+        </div>
+
+        <img class="img-responsive content-image" src="public/images/desayuno.jpg" alt="Platos de desayuno" loading="lazy" />
+
+        <div class="row">
+          <h3>Entraditas</h3>
+
+          <div class="col-md-4">
+            <h4>NACHOS FAMILIARES</h4>
+            <p>Acompañados de frijol, guacamol y queso derretido</p>
+
+            <h4>LAS DOBLADITAS</h4>
+            <p>Tortillas con queso derretido en pedacitos, con frijol y guacamol, acompañadas de salsa ranchera</p>
+          </div>
+
+          <div class="col-md-4">
+            <h4>NACHOS XEJASMIN</h4>
+            <p>Acompañados de estofado hecho en casa, carne o pollo, guacamol, frijoles volteados y queso derretido</p>
+          </div>
+
+          <div class="col-md-4">
+            <h4>QUESO FUNDIDO</h4>
+            <p>Variedad de quesos fundidos con trozos de chorizo</p>
+          </div>
+        </div>
+
+        <img class="img-responsive content-image" src="public/images/pizza.jpg" alt="Platillo tipo pizza" loading="lazy" />
+
+        <div class="row">
+          <h3>Parrilladas</h3>
+          <div class="col-md-6">
+            <h4>PARRILLADA XEJASMÍN</h4>
+            <p>
+              1–10 personas. 4 oz carne de res (puyazo o lomito), carne de cerdo (lomo en adobado o costilla en barbacoa),
+              longaniza, chorizo, pollo, guacamol, frijol, cebollines, papa asada y tortillas.
+            </p>
+          </div>
+        </div>
+
+        <img class="img-responsive content-image" src="public/images/parrillada.jpg" alt="Parrillada variada" loading="lazy" />
+
+        <div class="row">
+          <h3>Almuerzos</h3>
+
+          <div class="col-md-4">
+            <h4>Puyazo importado</h4>
+            <h4>Lomito importado</h4>
+          </div>
+
+          <div class="col-md-4">
+            <h4>Lomo adobado</h4>
+            <p>8 oz. de lomo de cerdo importado en adobo…</p>
+
+            <h4>Costillas a la barbacoa</h4>
+            <p>Pork ribs</p>
+
+            <h4>Spaghetti en salsa Alfredo o Boloñesa</h4>
+          </div>
+
+          <div class="col-md-4">
+            <h4>Pollo al carbón</h4>
+            <p>8 oz. de filete de pechuga asado…</p>
+          </div>
+        </div>
+
+        <img class="img-responsive content-image" src="public/images/SHK9163.jpg" alt="Platillo servido en mesa" loading="lazy" />
+
+        <div id="featuring-label">
+          <h3>¡Y muchos platillos más!</h3>
+          <a
+            href="https://1drv.ms/f/s!Ap5CO8PHQhWrkMR9zko9tRKqMunvPQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="button-download"
+          >
+            Descargar menú
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Atracciones -->
+    <section class="feature-2" id="section-5" aria-label="Atracciones">
+      <div class="jumbotron" id="jumbotron-atracciones">
+        <div class="container">
+          <h2>Atracciones</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row" id="top-row">
+          <div class="col-md-4 col-xs-12"><h4><b>Tour a la Montaña…</b></h4></div>
+          <div class="col-md-4 col-xs-12"><h4><b>Go Karts</b></h4></div>
+          <div class="col-md-4 col-xs-12"><h4><b>Canopy Pequeño…</b></h4></div>
+          <div class="col-md-4 col-xs-12"><h4><b>Canopy Montaña…</b></h4></div>
+          <div class="col-md-4 col-xs-12"><h4><b>Caballito…</b></h4></div>
+          <div class="col-md-4 col-xs-12"><h4><b>Pared de Escalar…</b></h4></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="supporting-2" id="section-6" aria-label="Galería de imágenes">
+      <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000" aria-label="Carrusel de imágenes">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+          </ol>
+
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="public/images/canopy-sueca.jpg" alt="Canopy" loading="lazy" />
+            </div>
+            <div class="item">
+              <img src="public/images/suecos-jeep.jpg" alt="Jeep" loading="lazy" />
+            </div>
+            <div class="item">
+              <img src="public/images/caballo.jpg" alt="Caballo" loading="lazy" />
+            </div>
+            <div class="item">
+              <img src="public/images/go-kart.jpg" alt="Go-kart" loading="lazy" />
+            </div>
+            <div class="item">
+              <img src="public/images/puente.jpg" alt="Puente" loading="lazy" />
+            </div>
+          </div>
+
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" aria-label="Anterior">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" aria-label="Siguiente">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contáctenos -->
+    <section class="supporting-2" id="section-7" aria-label="Contáctenos">
+      <div class="container">
+        <div class="contact">
+          <div class="row">
+            <div class="col-md-12 col-xs-12" id="form">
+              <h2 class="contact-title">Contáctenos</h2>
+
+              <!-- BEGIN Podio web form -->
+              <script src="https://podio.com/webforms/17622497/1184537.js"></script>
+              <script>
+                _podioWebForm.render("1184537");
+              </script>
+              <noscript>
+                <a href="https://podio.com/webforms/17622497/1184537" target="_blank" rel="noopener noreferrer">
+                  Por favor, rellena el formulario
+                </a>
+              </noscript>
+              <!-- END Podio web form -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pre-footer -->
+  <div class="pre-footer" role="contentinfo" aria-label="Redes sociales">
+    <div class="container">
+      <ul id="footer-icons" role="list">
+        <li>
+          <a href="https://www.facebook.com/paseo.xejasmin/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="public/icons/icon-facebook.svg" alt="" aria-hidden="true" />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/paseoxejasmin" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <img src="public/icons/icon-twitter.svg" alt="" aria-hidden="true" />
+          </a>
+        </li>
+        <li>
+          <a href="http://instagram.com/paseoxejasmin" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="public/icons/icon-instagram.svg" alt="" aria-hidden="true" />
+          </a>
+        </li>
       </ul>
     </div>
   </div>
-<!--for mobile-->
-  <div class="icon-menu pull-left">
-      <img src="public/icons/menu_white_24dp.svg">
-    </div>
-<!-- Mobile Menu CLose icon (will only appear in mobile devices-->
-<div class="menu">
-<div class="icon-close">
-  <img src="public/icons/close_white_24dp.svg">
-</div>
 
-<!-- Mobile Menu will only appear in mobile devices -->
-<ul class="mobile-menu">
-  <li><a href="#section-1">Inicio</a></li>
-  <li><a href="#section-2">Restaurante</a></li>
-  <li><a href="#section-4">Menu</a></li>
-  <li><a href="#section-5">Atracciones</a></li>
-  <li><a href="#section-6">Galer&iacute;a</a></li>
-  <li><a href="#section-7">cont&aacute;ctenos</a></li>
-</ul>
-</div>
-<!--jumbotron-->
-<div class="jumbotron" id="section-1">
-<div class="header">
-  <div class="container">
-      <a href="#section-1"><img class="mobile-logo" src="public/images/logoblanco.png" height="140px"/></a>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-address">
+        Restaurante Paseo Xejasmin, km 87.5, carretera interamericana, Tecpán, Guatemala
+      </p>
+      <a class="back-to-top" href="#section-1" aria-label="Volver arriba">
+        <span aria-hidden="true">↑</span>
+      </a>
+    </div>
+  </footer>
 
+  <!-- jQuery (keep as-is) -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-    <!--desktop nav-->
-    <ul class="nav">
-      <li><a href="#section-1">inicio</a></li>
-      <li><a href="#section-2">restaurante</a></li>
-      <li><a href="#section-4">menu</a></li>
-      <li><a href="#"><img class="desktop-logo" src ="public/images/logoblanco.png"  height="140px"/></a></li>
-            <li><a href="#section-5">Atracciones</a></li>
-            <li><a href="#section-6">Galer&iacute;a</a></li>
-      <li><a href="#section-7">contacto</a></li>
+  <!-- Script: mobile menu + sticky nav -->
+  <script>
+    var main = function () {
+      $(".site-navigation").hide();
+      var topOfOthDiv = $(".supporting").offset().top;
 
-    </ul>
-  </div>
-  <h1>Restaurante y Hotel</h1>
-  <h3>EVENTOS ESPECIALES TOURS Y MUCHO M&Aacute;S</h3>
-</div>
-</div>
-<!--supporting restaurante-->
-<div class="supporting" id="section-2">
-<div class="container">
+      function isMobile() {
+        return window.matchMedia("(max-width: 768px)").matches;
+      }
 
-  <div class="row">
-    <div class ="col-md-7">
-      <h1>Ubicado en el km. 87 carretera Interamericana, Paseo Xejasmin es un restaurante que brinda un nuevo concepto de gastronom&iacute;a rodeado de naturaleza.</h1>
-      <p>Paseo  Xejasmin  abre  sus  puertas al  p&uacute;blico  el  16  de  abril  del  a&ntilde;o  2011.  Este  negocio  familiar  se  emprende  con  el  prop&oacute;sito  de crear  un  nuevo  concepto  de  gastronom&iacute;a  rodeado  de  naturaleza.</p>
-      <p>Queriendo  consentir  a  nuestros  invitados  hemos  hecho  de  este  un  lugar  exclusivo  y  muy  privado,  para  que  pueda  relajarse  y disfrutar  de  los  exquisitos  platillos  que  ofrecemos  mientras    usted,  su  familia  y  sus  amigos  pasan  un  buen  rato  juntos.</p>
-      <p><strong>Aqu&iacute;  si  hay  algo  m&aacute;s  que  hacer  que  solo  comer!</strong></p> 
-      <p>Le  damos  la  bienvenida  a  este  bello  lugar  creado  para  consentirlo,  si&eacute;ntase  como en  su  casa  y  esperamos  tenerlo  en  otra  ocasi&oacute;n.</p>
-    </div>
-  <div class="col-md-4 col-md-offset-1">
-    <h4>tel&eacute;fonos</h4> 
-    <p>(502) 45765303 y 78404390</p>
-    <h4>Ubicaci&oacute;n</H4>
-    <p>Cruce en el Km. 87 Carretera Interamericana. (A 3 minutos de la carretera) Tecpan, Guatemala.</p>
-    <h4>Horario</h4>
-    <p><strong>Lunes-Jueves</strong> 7 a.m.- 5 p.m.</p>
-    <p><strong>Viernes-Domingo</strong>7 a.m. - 7 p.m.</p>
-</div>
-</div>
-</div>
-<!--feature video-->
-<div class="feature" id="section-3">
-  <video width="100%" controls muted autoplay loop>
-    <source src="public/video/paseo-xejasmin.mp4" type="video/mp4">
-  </video>
-</div>
-<!--main menu-->
-<div class="main" id="section-4">
-<h1>Menu</h1>
-</div>
-<div class="main-menu">
-<div class="container">
-  <div class="row">
-    <h3>Desayunos</h3>
-    <div class="col-md-4">
-      <h4>PASEO XEJASMIN</h4>
-      <p>Huevos al gusto y 5 oz. de lomito o puyazo importado</p>
-      <h4>BIG PASEO XEJASMIN</h4>
-      <p>Huevos al gusto gratinados con mozzarella y cheddar 5 oz. de lomito o puyazo importado, longaniza o chorizo y hashbrown</p>
-    </div>
-    <div class="col-md-4">
-      <h4>PARRILLADA XEJASMIN DESAYUNO </h4>
-      <p>Huevos al gusto, chorizo, longaniza, 5 oz. de lomito o puyazo importado y 1 panqueque</p>
-      <h4>HUEVOS CON TOMATE Y CEBOLLA </h4>
-      <p>Huevos revueltos con tomate y cebolla picada</p>
-    </div>
-    <div class="col-md-4">
-      <h4>EL MANCHECITO </h4>
-      <p>Huevos al gusto gratinados con mozzarella y cheddar con tiras de jam&oacute;n montados sobre pan con ajo/mantequilla</p>
-      <h4>XEJASMIN TRADICIONAL</h4>
-      <p>Huevos al gusto, 1 panqueque, 1 chorizo o longaniza</p>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-md-4">
-      <h4>EL EMPEDRADO</h4>
-      <p>Nachos con carne, pollo o estofado, 1 huevo estrellado en tiras y todo gratinado</p>
-      <h4>EL CAMPESINO</h4>
-      <p>2 huevos sobre tortillas fritas, bañados en mozzarella y cheddar</p>
-    </div>
-    <div class="col-md-4">
-      <h4>LOS RANCHEROS</h4>
-      <p>2 huevos estrellados bañados en salsita ranchera y trocitos de aguacate</p>
-      <h4>HUEVOS CON TOMATE Y CEBOLLA</h4>
-    </div>
-    <div class="col-md-4">
-      <h4>HUEVOS REVUELTOS SIMPLES</h4>
-      <h4>HUEVOS REVUELTOS MEZCLADOS</h4>
-      <p>Con chorizo, longaniza, jamón o tocino</p>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-md-4">
-      <h4>EL MONTADITO</h4>
-      <p>2 huevos bañados en mozzarella sobre una torta de chorizo o carne</p>
-      <h4>OMELETTE DE JAMÓN Y QUESO</h4>
-    </div>
-    <div class="col-md-4">
-      <h4>OMELETTE DE CHORIZO AHUMADO Y QUESO CHANCOL<h4>
-      <h4>OMELETTE DE CREMA DE ESPIANCA, QUESO, HONGOS Y CEBOLLAS</h4>
-    </div>
-    </div>
-      <img class="img-responsive" src="public/images/desayuno.jpg">
-    <div class="row">
-      <h3>Entraditas</h3>
-    <div class="col-md-4">
-      <h4>NACHOS FAMILIARES</h4>
-      <p>Acompa&ntilde;ados de frijol, guacamol y queso derretido</p>
-      <h4>LAS DOBLADITAS</h4>
-      <p>Tortillas con queso derretido en pedacitos, con frijol y guacamol, acompa&ntilde;adas de salsa ranchera</p>
-    </div>
-    <div class="col-md-4">
-      <h4>NACHOS XEJASMIN </h4>
-      <p>Acompa&ntilde;ados de estofado hecho en casa, carne o pollo, guacamol, frijoles volteados y queso derretido</p>
-    </div>
-    <div class="col-md-4">
-       <h4>QUESO FUNDIDO</h4>
-      <p>Variedad de quesos fundidos con trozos de chorizo</p>
-    </div>
-    </div>
-    <div class="row>">
-      <h3>Antojitos</h3>
-    <div class="col-md-4">
-      <h4>TORTILLAS CON QUESO FRESCO</h4>
-      <h4>TORTILLAS CON QUESO CHANCOL</h4>
-    </div>
-    <div class="col-md-4"></div>
-    <div class="col-md-4"></div>
-    </div>
-    <img class="img-responsive" src="public/images/pizza.jpg">
-  <div class="row">
-    <h3>Parrilladas</h3>
-    <div class="col-md-4">
-      <h4>PARRILLADA XEJASMÍN</h4>
-      <p>1-10 personas. 4oz carne de res (puyazo o lomito), carne de cerdo (lomo en adobado o costilla en barbacoa),
-          longaniza, chorizo, pollo, guacamol, frijol, cebollines, papa asada, tortillas. </p>
-    </div>
-    <img class="img-responsive" src="public/images/parrillada.jpg">
-  </div>
-  <div class="row">
-    <h3>Almuerzos</h3>
-    <div class="col-md-4">
-      <h4>Puyazo importado</h4>
-      <h4>Lomito Importado</h4>
-    </div>
-    <div class="col-md-4">
-      <h4>Lomo Adobado</h4>
-      <p>8 o.z. de lomo de cerdo importado en adobo...</p>
-      <h4>Costillas a la Barbacoa</h4>
-      <p>Pork Ribs</p>
-      <h4>Spagetti en salsa Alfredo o Boloñesa</h4>
-    </div>
-    <div class="col-md-4">
-      <h4>Pollo al Carb&oacute;n</h4>
-      <p>8oz de filete de pechuga asado....</p>
-    </div>
-    <div class="col-md-4">
-      <h4>Estofado Tecpaneco de 4 Carnes</h4>
-      <p>Pollo, Res, Cerdo y Chivo...</p>
-    </div>
-    <div class="col-md-4">
-      <h4>Hamburguesa Xejasmin</h4>
-      <p>1/3 lb. de carne, queso derretido, tocino, hongos y cebolla caramelizada</p>
-    </div>
-    <div class="col-md-4">
-    </div>
-    <img class="img-responsive" src="public/images/SHK9163.jpg">
-  </div >
-  <div id="featuring-label">
-  <h3>Y muchos platillos m&aacute;s!</h3>
-  <a href="https://1drv.ms/f/s!Ap5CO8PHQhWrkMR9zko9tRKqMunvPQ" target="_blank" id="button-download">Descargar Menu</a>
-</div>
-</div>
-</div>
+      function syncHamburgerVisibility() {
+        // Only allow the hamburger to be visible on mobile
+        if (!isMobile()) {
+          $(".icon-menu").hide();
+        } else {
+          // If menu is open, keep it hidden; if closed, show it
+          var menuIsOpen = $(".icon-menu").attr("aria-expanded") === "true";
+          if (menuIsOpen) $(".icon-menu").hide();
+          else $(".icon-menu").show();
+        }
+      }
 
-<!-- Atracciones -->
-<div class="feature-2" id="section-5">
-  <div class="jumbotron" id="jumbotron-atracciones">
-    <h1>Atracciones</h1>
-  </div>
-  <div class="container">
-    <div class="row" id="top-row">
-      <div class="col-md-4 col-xs-12">
-        <h4><b>Tour a la Montaña...</b></h4>
-      </div>
-      <div class="col-md-4 col-xs-12">
-        <h4><b>Go Karts</b></h4>
-      </div>
-      <div class="col-md-4 col-xs-12">
-        <h4><b>Canopy Pequeño... </b></h4>
-      </div>
-      <div class="col-md-4 col-xs-12">
-        <h4><b>Canopy Montaña...</b></h4>
-      </div>
-      <div class="col-md-4 col-xs-12">
-        <h4><b>Caballito...</b></h4>
-      </div>
-      <div class="col-md-4 col-xs-12">
-      <h4><b>Pared de Escalar...</b></h4>
-      </div>
-    </div>
-  </div>
-</div>
+      function openMenu() {
+        $(".menu").animate({ left: "0px" }, 200).attr("aria-hidden", "false");
+        $("body").animate({ left: "280px" }, 200);
+        $(".icon-menu").attr("aria-expanded", "true");
+        syncHamburgerVisibility(); // hide on open (and never show on desktop)
+      }
 
-<div class="supporting-2" id="section-6">
-<!-- bootstrap js -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      function closeMenu() {
+        $(".menu").animate({ left: "-280px" }, 200).attr("aria-hidden", "true");
+        $("body").animate({ left: "0px" }, 200);
+        $(".icon-menu").attr("aria-expanded", "false");
+        syncHamburgerVisibility(); // show again ONLY on mobile
+      }
 
-<!--gallery slider-->
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
-  <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-    </ol>
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-
-    <div class="item active">
-        <img src="public/images/canopy-sueca.jpg" alt="Canopy">
-    </div>
-
-     <div class="item">
-        <img src="public/images/suecos-jeep.jpg" alt="Jeep">
-    </div>
-
-    <div class="item">
-        <img src="public/images/caballo.jpg" alt="caballo">
-    </div>
-
-    <div class="item">
-        <img src="public/images/go-kart.jpg" alt="go-kart">
-    </div>
-    <div class="item">
-        <img src="public/images/puente.jpg" alt="Puente">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-  <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-  <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
-
-<!--contact us-->
-<div class="supporting-2" id="section-7">
-<div class="container">
-  <div class="contact">
-<div class="row">
-<div class="col-md-12 col-xs-12" id="form">
-<h1>Cont&aacute;ctenos</h1>
-
-<!-- BEGIN Podio web form -->
-<script src="https://podio.com/webforms/17622497/1184537.js"></script>
-<script type="text/javascript">
-_podioWebForm.render("1184537")
-</script>
-<noscript>
-<a href="https://podio.com/webforms/17622497/1184537" target="_blank">Por favor, rellena el formulario</a>
-</noscript>
-<!-- END Podio web form -->
-</div>
-</div>
-</div>
-</div>
-
-
-  </div>
-</div>
-</div>
-
-<!--pre-footer-->
-<div class="pre-footer">
-  <div class="container">
-    <ul id="footer-icons">
-      <li><a href="https://www.facebook.com/paseo.xejasmin/" target="_blank"><img src="public/icons/icon-facebook.svg"/></a>
-</li>
-      <li><a href="https://twitter.com/paseoxejasmin" target="_blank"><img src="public/icons/icon-twitter.svg"/></a></li>
-      <li><a href="http://instagram.com/paseoxejasmin" target="_blank"><img src="public/icons/icon-instagram.svg"/></a></li>
-    </ul>
-  </div>
-</div>
-<!--footer-->
-<div class="footer">
-  <div class="container">
-  </div>
-    <h4>Restaurante Paseo Xejasmin, km 87.5, carretera interamericana,Tecpan, 502, Guatemala</h4>
-    <a href="#section-1"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></a>
-  </div>
-</div>
-
-<!-- script to push the mobile menu-->
-<script type="text/javascript">
-  var main = function() {
-     $(".site-navigation").hide(); //hide your div initially
-    var topOfOthDiv = $(".supporting").offset().top;
-
-    $(window).scroll(function() {
-      if($(window).scrollTop() >= topOfOthDiv) { //scrolled past the other div?
-        $(".site-navigation").show(100); //reached the desired point -- show div
-        
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= topOfOthDiv) {
+          $(".site-navigation").show(100);
         } else {
           $(".site-navigation").hide(50);
         }
-     });
- /* Push the body and the nav over by 280px over */
-  $('.icon-menu').click(function() {
-    $('.menu').animate({
-      left: "0px"
-    }, 200);
+      });
 
-    $('body').animate({
-      left: "280px"
-    }, 200);
-    });
+      $(".icon-menu").click(function () {
+        openMenu();
+      });
 
-  /* Then push them back */
-    $('.icon-close').click(function() {
-    $('.menu').animate({
-      left: "-280px"
-    }, 200);
+      $(".icon-close").click(function () {
+        closeMenu();
+      });
 
-    $('body').animate({
-      left: "0px"
-    }, 200);
-    });
+      $(".mobile-menu a").click(function () {
+        closeMenu();
+      });
 
-    $('.mobile-menu').click(function() {
-  $('.menu').animate({
-    left:"-280px"
-  },200);
+      // ESC closes menu (keyboard accessibility)
+      $(document).on("keydown", function (e) {
+        if (e.key === "Escape") closeMenu();
+      });
 
-  $('body').animate({
-  left: "0px"
-}, 200);
-});
-  };
+      // Ensure correct visibility on load + resize
+      $(window).on("resize", function () {
+        syncHamburgerVisibility();
+      });
 
-  $(document).ready(main);
-</script>
+      syncHamburgerVisibility();
+    };
 
+    $(document).ready(main);
+  </script>
 </body>
 </html>
